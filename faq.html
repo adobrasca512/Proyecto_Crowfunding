@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	 <meta charset="utf-8">
+   <link rel="icon" href="_images/logo.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FAQ</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/styles_faq.css">
+</head>
+<body>
+
+ <header>
+         <a href="index.php" class="brand">PARKTING  |  <span onload="what()" id="mySpan"></span></a>
+
+         <div class="menu-btn"></div>
+         <div class="navigation">
+            <div class="navigation-items">
+               <a href="about.php">About</a>
+               <a href="contact.php">Contact</a>
+               <a href="#">Explore</a>
+               <a href="events.php">Planea</a>
+               <a href="clubes.php">Clubs</a>
+            </div>
+         </div>
+      </header>
+      <script type="text/javascript">
+         
+window.onload = function() {
+   const d = new Date();
+ document.getElementById('mySpan').innerHTML = d.getDate()+'-'+d.getMonth()+"-"+d.getFullYear();
+ 
+}
+ 
+      </script>
+    <section>
+         <div class="title-header">
+            <div class="txt-header"><h1>Frecuently<br>Asked <br>Questions</h1></div>
+             <div class="img-header"></div>
+         </div>
+         <div class="enlaces"><p>Jump To:</p>
+            <a href="#general">General&nbsp</a>
+            <a href="#registration">Registration&nbsp</a>
+            <a href="">Covid-19&nbsp</a>
+            <a href="">Suscription Info&nbsp</a>
+            <a href="#travel">Travel&nbsp</a></div>
+         <div class="accordion-container ">
+            <h2 id="general">General</h2>
+            <button class="collapse" value="expand" id="gen-button"onclick="collapseAll(  'c_general','gen-button')">Expand all<span>+</span></button>
+           <button class="accordion"><i class="material-icons rotate right">expand_more</i>Are refunds available if 2022 Parkting is postponed or canceled?</button>
+            <div class="panel c_general">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <button class="accordion"><i class="material-icons rotate right">expand_more</i>What Covid-19 safety precautions will be taken?</button>
+<div class="panel c_general">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+
+<button class="accordion"><i class="material-icons rotate right">expand_more</i>Is there an age limit/rule?</button>
+<div class="panel c_general">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+         </div>
+            <div class="accordion-container">
+            <h2 id="registration">Registration</h2>
+             <button id="reg-button" class="collapse" value="expand" onclick="collapseAll(  'c_registration','reg-button')">Expand all<span>+</span> </button>
+           <button class="accordion"><i class="material-icons rotate right">expand_more</i>Are you hiring workers, volunteers, photographers/video people, etc for the event?</button>
+            <div class="panel c_registration">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <button class="accordion"><i class="material-icons rotate right">expand_more</i>Are you hiring workers, volunteers, photographers/video people, etc for the event?</button>
+<div class="panel  c_registration">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+
+<button class="accordion"><i class="material-icons rotate right">expand_more</i>Are you hiring workers, volunteers, photographers/video people, etc for the event?</button>
+<div class="panel  c_registration">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+         </div>
+            <div class="accordion-container">
+            <h2 id="travel">Travel</h2>
+             <button class="collapse" value="expand"id="tra-button" onclick="collapseAll(  'c_travel','tra-button')">Expand all<span>+</span> </button>
+           <button class="accordion"><i class="material-icons rotate right">expand_more</i>Are you hiring workers, volunteers, photographers/video people, etc for the event?</button>
+            <div class="panel c_travel">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <button class="accordion"><i class="material-icons rotate right">expand_more</i>Are you hiring workers, volunteers, photographers/video people, etc for the event?</button>
+<div class="panel c_travel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+
+<button class="accordion"><i class="material-icons rotate right">expand_more</i>Are you hiring workers, volunteers, photographers/video people, etc for the event?</button>
+<div class="panel c_travel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+         </div>
+</section>
+         <script type="text/javascript">
+            let acc = document.getElementsByClassName("accordion");
+var i;
+var j;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+function collapseAll(class2,idButton){
+   //identificamos el boton que se presiono
+  let elem = document.getElementById(idButton);
+   let panel = document.getElementsByClassName('panel '+class2);
+  //si el boton esta expandido, le vamos a cambiar la etiqueta a collapse y quitar el active
+    if (elem.value=="expand") {
+      elem.value = "collapse";
+ elem.innerHTML = 'Collapse All <span>-</span>';
+  acc.className="accordion";
+ //el display sera none
+ //elem.firstElementChild.innerHTML='-';
+
+ display(panel,'block');
+}
+    else {elem.value = "expand";
+     elem.innerHTML = 'Expand All <span>+</span>';
+      acc.className="accordion active";
+     //el display sera block
+    display(panel,'none');
+ }
+
+ }
+ function display(panel,styledisp){
+    for (j = 0; j < panel.length; j++) {
+       panel[j].style.display = styledisp;
+    }
+ }
+</script>
+      </body>
+
+</html>

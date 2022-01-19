@@ -1,0 +1,29 @@
+#page-title{
+       letter-spacing: 4.29px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+	font-weight: normal;
+	 font-size: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+li{
+	    color: #d8d8d8;
+	    font-size: 24px;
+   
+}
+.sub-item{
+font-size: 14px;
+padding-left: 10px;
+margin-bottom: 10px;
+
+}

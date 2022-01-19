@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#page-title{
+	letter-spacing: 4.29px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+
+}
+#second-page-title{
+	letter-spacing: 4.29px;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+
+	letter-spacing: 4.29px;
+	    font-weight: 300;
+	        
+margin-top: 60px;
+}
+.header-titulos{
+	
+		color: #d8d8d8;
+	font-size: 24px;
+	    text-align: left;
+	    text-transform: uppercase;
+	    font-style: normal;
+	    letter-spacing: 0.8px;
+	    margin-top: 40px;
+	    margin-bottom: 10px;
+	  
+}
+.sublist{
+	list-style-type: square;
+	color: #d8d8d8;
+	font-size: 13px;
+	    text-align: left;
+	    letter-spacing: 0.8px;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	    margin-left: 60px;
+}
+.sublist li{
+	margin-bottom: 30px;
+}
+ol{
+	 counter-reset: item;
+}
+ol>li{
+ /*Esto es para poner valores 2.1 2.2 2.3 etc un contador*/
+	counter-increment: item;
+}
+ol ol >li{
+
+	color: #d8d8d8;
+	font-size: 13px;
+	    text-align: left;
+	    letter-spacing: 0.8px;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	    margin-left: 60px;
+	display: block;
+}
+ol ol > li:before {
+    content: counters(item, ".") ". ";
+    margin-left: -20px;
+}
+/*pinto el icon de negro*/
+
+
+

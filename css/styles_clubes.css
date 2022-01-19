@@ -1,0 +1,402 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  * {
+    box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main{
+width: 100%;
+
+
+ padding-top: 30px;
+ padding-left: 50px;
+  padding-right: 50px;
+    background-color: white;
+}
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+
+}
+
+header .brand img {
+  color: var(--white-pred-color);
+  width: 90px;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: var(--white-pred-color);
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: '';
+  position: absolute;
+  background: var(--white-pred-color);
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+.banner{
+  margin-top: 10%;
+  width: 100%;
+ 
+  display: flex;
+  flex-direction: row;
+  
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.inside-banner{
+ 
+  height: 100%;
+  overflow: hidden;
+
+}
+.inside-banner img{
+width: 92%;
+height: 90%;
+margin-left:20%;
+}
+
+.inside-banner h1{
+font-size: 72px;
+font-weight: bold;
+color: black;
+text-align: left;
+margin: 0 auto;
+margin-bottom: 10%;
+}
+.inside-banner p{
+  font-size: 24px;
+text-align: justify;
+text-justify: inter-word;
+color: black;
+line-height: 40px;
+
+margin: 0 auto;
+}
+.inside-banner input{
+  margin-top: 5%;
+  color: gray;
+  width: 60%;
+  height: 8%;
+border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+.inside-banner button{
+   width: 20%;
+  height: 8%;
+  margin-left: 0;
+  background-color: #333333;
+  border-color: #333333;
+  border-radius: 5px;
+color: white;
+font-weight: bold;
+}
+.elements{
+  width: 100%;
+
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+display: flex;
+flex-direction: column;
+
+}
+.content{
+  width: 100%;
+ 
+  margin-bottom: 5%;
+}
+.content h2{
+   font-size: 16px;
+font-weight: bold;
+color: black;
+text-align: left;
+margin-bottom: 30px;
+}
+hr{
+  height: 1px;
+   border: 0; border-top: 1px solid #999999
+;
+  width: 25%;
+ 
+  margin-left: 0;
+}
+.paragraph{
+  width: 30%;
+  
+}
+.paragraph2{
+  width: 30%;
+  
+}
+.content p{
+    font-size: 16px;
+line-height: 30px;
+color: #4D4D4D;
+text-align: left;
+
+}
+.club-item:hover{
+ box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.container-grid-items{
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  grid-row-gap: 60px;
+  grid-column-gap: 50px;
+}
+.club-item{
+  border: 1px solid #e0e0e0;
+    border-radius: 10px;
+  overflow: hidden;
+padding-left: 10%;
+padding-right: 10%;
+
+}
+.club-item img{
+  width: 100%;
+  height: 35%;
+}
+.club-item h3{
+     font-size: 24px;
+font-weight: bold;
+color: black;
+text-align: center;
+
+margin-bottom: 4%;
+}
+.club-item p{
+  text-align: center;
+}
+.modal-title{
+font-family: 'Dancing Script', cursive;
+font-size: 42px;
+}
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ width: 100%;
+   text-align: center;
+  font-size: 32px;
+ 
+}
+
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+    font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  kit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+.icono{
+
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}-webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.modal-body{
+      border-top: 10px solid;
+     border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+
+}
+.col-form-label{
+    font-family: "Poppins", sans-serif !important;
+     font-size: 16px;
+}
+ .btn{
+  background-color: #333333;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  /*border-color: #333333;
+  border-radius: 5px;
+color: white;
+height: 8%;
+width: 60%;
+font-weight: bold;
+font-size: 16px;*/
+
+
+}
+.btn:hover{
+    color: white;
+}
+
+.club-item button{
+  background-color: #333333;
+  border-color: #333333;
+  border-radius: 5px;
+color: white;
+height: 8%;
+width: 60%;
+font-weight: bold;
+font-size: 16px;
+margin-left: 20%;
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.propuesta{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+position: relative;
+margin-bottom: 5%;
+}
+.propuesta h3{
+  margin-right: 2%;
+}
+.propuesta p{
+  margin-right: 2%;
+}
+.propuesta button{
+
+  background-color: transparent;
+  border-color: transparent;
+  color:red;
+  
+  font-size: 16px;
+}
+.container-like{
+position:absolute;
+  max-width:20%;
+  height:20px;
+}
+@media (max-width: 1070px){
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+  .container-grid-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }  
+    .club-item button{
+      margin-bottom: 30%;
+        }
+        .club-item p{
+          font-size: 12px;
+        }
+        
+  }
+@media (max-width: 700px){
+
+  .container-grid-items{
+    display: grid;
+    grid-template-columns: 1fr;
+    }  
+    .paragraph{
+      width: 60%;
+    }
+    .inside-banner h1{
+      font-size: 40px;
+    }
+     main{
+margin-top: 10%;
+}
+  }
+  .container1{
+    
+    width: 100% !important;
+    padding: 0;
+  }
+  .alert{
+    width: 100% !important;
+position: absolute;
+    top: 0;
+margin-top: 0 !important;
+  z-index: 1001;
+  font-size: 16px;
+}
+.excess{
+  position: relative !important;
+display: none !important;
+}
+.close{
+   font-size: 16px !important;
+}

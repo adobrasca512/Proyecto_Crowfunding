@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+  main{
+    position: relative;
+
+  }
+.contenido{
+width: 100%;
+height: 15cm;
+position: relative;
+}
+  .contenido > ul {
+    position: absolute;
+    top: 20%;
+    width: 800px;
+   
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 30px;
+ z-index: 998;
+  }
+ 
+ .list > li{
+    width: 25% ;
+    list-style-type: none ;
+    position: absolute ;
+    top: 0 ;
+    padding: 20px ;
+
+    height: 200px ; 
+    opacity:0;
+    padding-top: 40px ;
+    text-align: center ;
+    transition: 1s opacity ; 
+  }
+
+  .activeul {
+    opacity: 1 !important;
+  }
+  
+  p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color:white;
+    line-height: 1.5em;
+    margin-top: 100%;
+font-family: "Poppins", sans-serif;
+  }
+
+  strong { 
+    color: #fff;
+    font-weight: 700;
+  
+    line-height: 100px; 
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    color: white;
+font-family: 'Satisfy', cursive;
+font-size: 20px;
+  }
+  .usuario1{
+    background-image: url('../_images/about-references/user1.jpg');
+background-size: cover;
+  }
+   .usuario2{
+    background-image: url('../_images/about-references/user2.jpg');
+background-size: cover;
+  }
+   .usuario3{
+    background-image: url('../_images/about-references/user3.jpg');
+background-size: cover;
+  }
+   .usuario4{
+    background-image: url('../_images/about-references/user4.jpg');
+background-size: cover;
+  }
+   .usuario5{
+    background-image: url('../_images/about-references/user5.jpg');
+background-size: cover;
+  }
+   .usuario6{
+    background-image: url('../_images/about-references/user6.jpg');
+background-size: cover;
+  }
+   .usuario7{
+    background-image: url('../_images/about-references/user7.jpg');
+background-size: cover;
+  }
+     .usuario8{
+    background-image: url('../_images/about-references/user8.jpg');
+background-size: cover;
+  }
+   .usuario9{
+    background-image: url('../_images/about-references/user9.jpg');
+background-size: cover;
+  }
+   .usuario10{
+    background-image: url('../_images/about-references/user10.jpg');
+background-size: cover;
+  }
+   .usuario11{
+    background-image: url('../_images/about-references/user11.jpg');
+background-size: cover;
+  }
+   .usuario12{
+    background-image: url('../_images/about-references/user12.jpg');
+background-size: cover;
+  }
+ 
+  li{
+    border-radius: 50%;
+    position: relative;
+ z-index: 2000;
+  }
+  @media screen and (max-width: 500px) {
+ .contenido{
+  overflow: hidden;
+ }
+ .contenido > ul {
+    position: relative;
+  padding-left: 5%;
+    width: 600px;
+   margin-left: -200px;
+  }
+  .list > li{
+     height:100px ;
+     width:15%;
+     padding: 0;
+  
+      }
+       strong { 
+    color: #fff;
+    font-weight: 700;
+  
+    line-height: 20px; 
+    position: absolute;
+    top: -30%;
+    left: 10%;
+    color: white;
+font-family: 'Satisfy', cursive;
+font-size: 20px;
+  }
+ 
+  }

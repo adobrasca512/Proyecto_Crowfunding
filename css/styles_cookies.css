@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+.inside-banner h1{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	
+	letter-spacing: 4.29px;
+	    font-weight: 300;
+	        line-height: 1.33;
+
+}
+p.subtitle{
+		color: #fff;
+	font-size: 12px;
+	    text-align: center;
+	    letter-spacing: 0.8px;
+	    margin-top: 10px;
+	    
+	    margin-bottom: 100px;
+}
+
+.inside-banner h2{
+	color: white;
+	font-weight: 500;
+	letter-spacing: 0.8px;
+	font-family: 'Alice', serif;
+	margin-top: 10px;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.inside-banner li{
+	font-style: italic;
+	color: #d8d8d8;
+	font-size: 13px;
+	text-align: left;
+	 margin-top: 25px;
+	letter-spacing: 0.8px;
+	
+
+}
+.table-container{
+	overflow-x:auto;
+}
+.inside-banner table{
+	width:70%;
+    
+}
+.inside-banner table,th,td{
+font-weight: 200;
+font-size: 13px;
+  border:1px solid white;
+border-collapse: collapse;
+color: white;
+
+letter-spacing: 0.8px;
+}
+th, td {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 35px;
+  text-align: left;
+}
+.column-edit{
+	width: 40%;
+}
+.table-links{
+	color: white;
+	
+	font-size: 13px;
+	margin-top: 10px;
+	letter-spacing: 0.8px;
+	font-weight: 200;
+
+}
+
+
+

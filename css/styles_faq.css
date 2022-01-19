@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+:root {
+  --red-txt-color: #FF0033;
+  --blue-txt-color: #1680AC;
+  --white-pred-color: #26232f;
+  --blue-btn-color: #2696E9;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+        background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+background-color: #fff;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+/*·········································································*/
+/*Menu*/
+/*·········································································*/
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: var(--white-pred-color);
+  font-family: 'Caveat Brush', cursive;
+  font-size: 24px;
+text-decoration: none;
+letter-spacing: 5px;
+}
+header .brand span{
+	color: #FF0033;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic;
+	font-size: 20px;
+}
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: var(--white-pred-color);
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: '';
+  position: absolute;
+  background: var(--red-txt-color);
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+
+}
+ @media (max-width: 1040px){
+  header{
+    padding: 12px 20px;
+  }
+
+ 
+  header .navigation{
+    display: none;
+  }
+
+  header .navigation.active{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a{
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before{
+    background: #222;
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items{
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  .menu-btn{
+    background: url(_images/menu.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active{
+    z-index: 999;
+    background: url(close.png)no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color:transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  display: none;
+  overflow: hidden;
+}
+.accordion-container button i{
+  color: #b44830;
+}
+.accordion-container button {
+ font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+    
+
+
+     font-style: bold;
+}
+.accordion-container button.active i {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+
+}
+
+
+section{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.title-header{
+  width: 100%;
+  height: 40%;
+display: flex;
+flex-direction: row;
+margin-bottom: 5%;
+
+
+}
+.txt-header{
+width: 50%;
+height: 100%;
+
+}
+.txt-header h1{
+    font-family: 'Poppins', sans-serif;
+    
+  margin-bottom: 2%;
+     color: #FF0033;
+     
+     font-size: 4.75rem;
+}
+.img-header{
+width: 50%;
+height: 100%;
+
+
+}
+.enlaces{
+  width: 100%;
+  height: 10%;
+  margin-bottom: 3%;
+}
+.enlaces p{
+  font-size: 13px;
+}
+.enlaces a{
+  text-decoration: none;
+  color: black;
+
+}
+.enlaces a:hover{
+  text-decoration: underline;
+}
+.accordion-container{
+  width: 100%;
+  height: 100%;
+}
+.accordion-container h2{
+    font-size: 30px;
+     font-family: 'Poppins', sans-serif;
+    
+  margin-bottom: 2%;
+     color: #FF0033;
+     font-style: bold;
+
+     
+}
+
+.panel p{
+font-size: 16px;
+ font-family: 'Poppins', sans-serif;
+}
+.accordion-container button{
+  font-size: 16px;
+ font-family: 'Poppins', sans-serif;
+
+}/*
+.collapse:after{
+content: '+';
+ color: #b44830;
+}*/
+.collapse{
+  background-color: transparent;
+  border-color: transparent;
+}
+.collapse span{
+  color: #b44830;
+}

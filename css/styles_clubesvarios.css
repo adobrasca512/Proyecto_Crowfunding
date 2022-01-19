@@ -1,0 +1,517 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  * {
+    box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+ /*
+  .button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin-top: 1%;
+  margin-left: 80%;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+  #button-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-2 a {
+  position: relative;
+  text-decoration: none;
+  transition: all .35s ease-Out;
+  color: white;
+  font-weight: bold;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button-2:hover #slide {
+  left: 0;
+}
+
+#button-2:hover a {
+  color: black;
+}*/
+
+
+  main{
+  background: rgba(3, 1, 1, 0.71);
+  color: white;
+  position: relative;
+  padding: 1rem;
+
+
+}
+
+main h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 92px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+.description1{
+  width: 30%;
+  height: 50%;
+  margin: 0 auto;
+}
+.description2{
+  width: 30%;
+  height: 50%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}.galeria-container{
+  margin-bottom: 5%;
+width: 100%;
+}
+.galeria-container h2{
+   font-family: 'Dancing Script', cursive;
+   font-size: 72px;
+   margin-left: 30%;
+
+}
+.galeria{
+  display: grid;
+  width: 70%;
+
+  grid-row-gap: 10%;
+  grid-column-gap: 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-right: 10%;
+  padding-left: 10%;
+
+  margin: 0 auto;
+  margin-top: 0;
+
+}
+.galeria img{
+  width: 100%;
+  height: 100%;
+
+}
+
+#myVideo {
+   object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.horarios-localizacion{
+ 
+  width: 90%;
+  height: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 10% auto;
+
+grid-column-gap: 10px;
+
+}
+.item{
+   background-color: rgba(19,20,22,255);
+  padding-left: 10%;
+
+ padding-top: 5%;
+ padding-bottom: 5%;
+
+  height: 100%;
+}
+.historia{
+  margin-top: 30%;
+}
+.historia h2{
+   font-family: 'Dancing Script', cursive;
+   font-size: 72px;
+   margin-left: 30%;
+}
+.historia-container{
+  display: flex;
+
+}
+.historia-container{
+  width: 40%;
+  margin-left: 50%;
+  height: 100%;
+}
+  .container-circle{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+position: relative;
+  }
+   .container-circle .contacto-circle{
+    width: 40%;
+    height: 50%;
+    margin: 0 auto;
+   
+
+  }
+  .circular-text{
+display: block;
+
+  }
+
+  .contacto-text{
+    position: absolute;
+    top: 10%;
+   left: 35%;
+   width: 30%;
+   height: 45%;
+  }
+  .contacto-text h3{
+     font-family: 'Dancing Script', cursive;
+     font-size: 26px;
+    text-align: center;
+  }
+  .contacto{
+    
+    text-align: center;
+  }
+.apoya{
+  background-color: rgba(19,20,22,255);
+  margin-top: 50%;
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  padding: 5%;
+
+}
+.apoya button{
+background-color: white;
+border:white;
+border-radius: 5px;
+width: 30%;
+height: 30%;
+color: black;
+font-size: 16px;
+font-weight: bold;
+}
+.apoya button:hover{
+  color: white;
+  border:white 2px solid;
+  background-color: transparent;
+  }
+  .media{
+    position: relative;
+  }
+  .media-body{
+    padding: 5%;
+
+ 
+  
+ 
+  text-align: center;
+
+ 
+  }
+  
+
+.dialog{
+  position:relative;
+  margin:50px auto;
+  width:90%;
+    
+  border:2px solid #FFD700;
+  border-image-slice: 1;
+  border-radius:5px; 
+ word-wrap: break-word;
+}
+.dialog p{
+
+}
+.card{
+}
+.top-bot{
+  position:absolute;
+  top:-20px;
+  left:0px;
+  width:0;
+  height:0;
+  border-width:10px;
+  border-style:solid;
+  border-color:transparent transparent #FFD700 transparent; 
+
+}
+.top-bot-border{
+  top:-18px;
+  border-color:transparent transparent transparent transparent; 
+  
+}
+.dialog-content{
+  text-align:center;
+}
+
+.code-top-bot{
+  position:absolute;
+  top:-10px;
+  right:20px;
+  color:red;
+}
+.code-top-bot-border{
+  position:absolute;
+  top:-7px;
+  right:20px;
+  
+}
+@keyframes fade-in-btm {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes spin{
+  100%{
+    -webkit-transform:rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.container{
+  width: 50%;
+  margin: 0 auto;
+}.list-unstyled{
+    background-color: rgba(19,20,22,255);
+}
+.card{ background: rgb(255,225,28);
+background: linear-gradient(90deg, rgba(255,225,28,1) 13%, rgba(94,255,196,1) 46%, rgba(0,207,255,1) 69%);
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px
+
+}
+
+.users {
+    border-radius: 10px;
+    padding-right: 5px;
+    width: 60px;
+    height: 55px
+}
+
+.users:hover {
+    cursor: pointer
+}
+
+.round .align-self-start {
+    border-radius: 100%;
+    width: 45px;
+    height: 40px
+}
+
+.media .comment {
+    background: #F4F4F4;
+    border: none;
+    border-radius: 10px;
+    
+
+}
+
+h6.user {
+    color: #fff;
+    font-size: 15px !important;
+    padding-left: 15px !important;
+    margin-bottom: 0
+}
+
+h6.user:hover {
+    cursor: pointer;
+    text-decoration: underline
+}
+
+p.text {
+    margin-bottom: 0;
+    color: #8A8A8A !important;
+    font-size: 14px
+}
+
+.ml-auto {
+    margin-right: 10px
+}
+
+ .reply {
+    color: black !important;
+    font-size: 15px
+}
+
+@media screen and (min-width: 576px) {
+    .comment {
+        width: 470px !important
+    }
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popuptext {
+  visibility: visible;
+  width: 160px;
+  background-color: #FB3737;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 999;
+top:0.8%;
+  left: 72%;
+  margin-left: -80px;
+  position: absolute;
+}
+
+ 
+.popuptext::after {
+  content: '';
+    width:0px;
+    height:0px;
+    border-bottom:5px solid transparent;  /* izquierda flecha */
+    border-top:5px solid transparent; /* derecha flecha */
+    border-left:10px solid #FB3737; /* base flecha y color*/
+    font-size:0px;
+    line-height:0px;
+    position: absolute;
+    top: 30%;
+    right: -5%;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.btn1{
+text-decoration: none;
+color: black;
+background: white;
+border-radius: 5px;
+  position: absolute;
+  top: 0.8% !important;
+  left: 80% !important;
+  z-index: 5000;
+}
+.alert{
+ position: absolute;
+    top: 0;
+margin-top: 0 !important;
+  z-index: 1001;
+  font-size: 16px;
+}
+@media (max-width: 800px){
+
+  .horarios-localizacion{
+
+grid-column-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+  grid-row-gap: 10px;
+
+    } 
+    .description1{
+      margin-top: 30%;
+    }
+.description1 h1{
+font-size: 42px;
+}.description2{
+  width: 60%;
+}
+.apoya{
+width: 80%;
+    }
+    .container{
+      width: 80%;
+     }
+     .galeria{
+  
+  width: 80%;
+
+  grid-row-gap: 3%;
+ 
+ 
+  grid-template-rows:1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr;
+
+}
+.menu-btn{
+
+  background: url(../_images/iconos/menu-white.svg)no-repeat;
+}
+.btn1{
+
+  position: absolute;
+  top: 1% !important;
+  left: 40% !important;
+
+}
+.popuptext {
+  visibility: visible;
+  width: 100px;
+  background-color: #FB3737;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 999;
+top:1%;
+  left: 32%;
+  margin-left: -80px;
+  position: absolute;
+}
+    }
